@@ -1,0 +1,24 @@
+// prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/client"
+}
+
+// Define your Supabase datasource
+datasource supabase {
+  provider = "postgresql"
+  url      = env("SUPABASE_DATABASE_URL") // Make sure to replace this with your Supabase database URL
+}
+
+// Define your data model
+model User {
+  id       Int      @id @default(autoincrement())
+  username String
+  email    String
+  metamask String
+  score    Int
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
