@@ -113,6 +113,7 @@ exports.Prisma.UserScalarFieldEnum = {
   email: 'email',
   metamask: 'metamask',
   score: 'score',
+  user_id: 'user_id',
   createdAt: 'createdAt',
   updatedAt: 'updatedAt'
 };

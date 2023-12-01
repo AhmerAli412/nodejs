@@ -884,6 +884,7 @@ export namespace Prisma {
     email: string | null
     metamask: string | null
     score: number | null
+    user_id: string | null
     createdAt: Date | null
     updatedAt: Date | null
   }
@@ -894,6 +895,7 @@ export namespace Prisma {
     email: string | null
     metamask: string | null
     score: number | null
+    user_id: string | null
     createdAt: Date | null
     updatedAt: Date | null
   }
@@ -904,6 +906,7 @@ export namespace Prisma {
     email: number
     metamask: number
     score: number
+    user_id: number
     createdAt: number
     updatedAt: number
     _all: number
@@ -926,6 +929,7 @@ export namespace Prisma {
     email?: true
     metamask?: true
     score?: true
+    user_id?: true
     createdAt?: true
     updatedAt?: true
   }
@@ -936,6 +940,7 @@ export namespace Prisma {
     email?: true
     metamask?: true
     score?: true
+    user_id?: true
     createdAt?: true
     updatedAt?: true
   }
@@ -946,6 +951,7 @@ export namespace Prisma {
     email?: true
     metamask?: true
     score?: true
+    user_id?: true
     createdAt?: true
     updatedAt?: true
     _all?: true
@@ -1043,6 +1049,7 @@ export namespace Prisma {
     email: string
     metamask: string
     score: number
+    user_id: string
     createdAt: Date
     updatedAt: Date
     _count: UserCountAggregateOutputType | null
@@ -1072,6 +1079,7 @@ export namespace Prisma {
     email?: boolean
     metamask?: boolean
     score?: boolean
+    user_id?: boolean
     createdAt?: boolean
     updatedAt?: boolean
   }, ExtArgs["result"]["user"]>
@@ -1082,6 +1090,7 @@ export namespace Prisma {
     email?: boolean
     metamask?: boolean
     score?: boolean
+    user_id?: boolean
     createdAt?: boolean
     updatedAt?: boolean
   }
@@ -1096,6 +1105,7 @@ export namespace Prisma {
       email: string
       metamask: string
       score: number
+      user_id: string
       createdAt: Date
       updatedAt: Date
     }, ExtArgs["result"]["user"]>
@@ -1497,6 +1507,7 @@ export namespace Prisma {
     readonly email: FieldRef<"User", 'String'>
     readonly metamask: FieldRef<"User", 'String'>
     readonly score: FieldRef<"User", 'Int'>
+    readonly user_id: FieldRef<"User", 'String'>
     readonly createdAt: FieldRef<"User", 'DateTime'>
     readonly updatedAt: FieldRef<"User", 'DateTime'>
   }
@@ -1806,6 +1817,7 @@ export namespace Prisma {
     email: 'email',
     metamask: 'metamask',
     score: 'score',
+    user_id: 'user_id',
     createdAt: 'createdAt',
     updatedAt: 'updatedAt'
   };
@@ -1902,6 +1914,7 @@ export namespace Prisma {
     email?: StringFilter<"User"> | string
     metamask?: StringFilter<"User"> | string
     score?: IntFilter<"User"> | number
+    user_id?: StringFilter<"User"> | string
     createdAt?: DateTimeFilter<"User"> | Date | string
     updatedAt?: DateTimeFilter<"User"> | Date | string
   }
@@ -1912,6 +1925,7 @@ export namespace Prisma {
     email?: SortOrder
     metamask?: SortOrder
     score?: SortOrder
+    user_id?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
@@ -1925,6 +1939,7 @@ export namespace Prisma {
     email?: StringFilter<"User"> | string
     metamask?: StringFilter<"User"> | string
     score?: IntFilter<"User"> | number
+    user_id?: StringFilter<"User"> | string
     createdAt?: DateTimeFilter<"User"> | Date | string
     updatedAt?: DateTimeFilter<"User"> | Date | string
   }, "id">
@@ -1935,6 +1950,7 @@ export namespace Prisma {
     email?: SortOrder
     metamask?: SortOrder
     score?: SortOrder
+    user_id?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
     _count?: UserCountOrderByAggregateInput
@@ -1953,6 +1969,7 @@ export namespace Prisma {
     email?: StringWithAggregatesFilter<"User"> | string
     metamask?: StringWithAggregatesFilter<"User"> | string
     score?: IntWithAggregatesFilter<"User"> | number
+    user_id?: StringWithAggregatesFilter<"User"> | string
     createdAt?: DateTimeWithAggregatesFilter<"User"> | Date | string
     updatedAt?: DateTimeWithAggregatesFilter<"User"> | Date | string
   }
@@ -1962,6 +1979,7 @@ export namespace Prisma {
     email: string
     metamask: string
     score: number
+    user_id: string
     createdAt?: Date | string
     updatedAt?: Date | string
   }
@@ -1972,6 +1990,7 @@ export namespace Prisma {
     email: string
     metamask: string
     score: number
+    user_id: string
     createdAt?: Date | string
     updatedAt?: Date | string
   }
@@ -1981,6 +2000,7 @@ export namespace Prisma {
     email?: StringFieldUpdateOperationsInput | string
     metamask?: StringFieldUpdateOperationsInput | string
     score?: IntFieldUpdateOperationsInput | number
+    user_id?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -1991,6 +2011,7 @@ export namespace Prisma {
     email?: StringFieldUpdateOperationsInput | string
     metamask?: StringFieldUpdateOperationsInput | string
     score?: IntFieldUpdateOperationsInput | number
+    user_id?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -2001,6 +2022,7 @@ export namespace Prisma {
     email: string
     metamask: string
     score: number
+    user_id: string
     createdAt?: Date | string
     updatedAt?: Date | string
   }
@@ -2010,6 +2032,7 @@ export namespace Prisma {
     email?: StringFieldUpdateOperationsInput | string
     metamask?: StringFieldUpdateOperationsInput | string
     score?: IntFieldUpdateOperationsInput | number
+    user_id?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -2020,6 +2043,7 @@ export namespace Prisma {
     email?: StringFieldUpdateOperationsInput | string
     metamask?: StringFieldUpdateOperationsInput | string
     score?: IntFieldUpdateOperationsInput | number
+    user_id?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -2067,6 +2091,7 @@ export namespace Prisma {
     email?: SortOrder
     metamask?: SortOrder
     score?: SortOrder
+    user_id?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
@@ -2082,6 +2107,7 @@ export namespace Prisma {
     email?: SortOrder
     metamask?: SortOrder
     score?: SortOrder
+    user_id?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
@@ -2092,6 +2118,7 @@ export namespace Prisma {
     email?: SortOrder
     metamask?: SortOrder
     score?: SortOrder
+    user_id?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
