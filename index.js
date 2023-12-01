@@ -2,7 +2,8 @@
 
 const express = require('express');
 const { PrismaClient } = require('./generated/client');
-const Webhook = require('@clerk/clerk-sdk-node'); 
+// const Webhook = require('@clerk/clerk-sdk-node'); 
+const { Webhook } = require("svix");
 
 const app = express();
 const prisma = new PrismaClient();
@@ -26,7 +27,7 @@ app.post('/webhook', async (req, res) => {
         where: { user_id: id },
       });
 
-      // If user does not exist, create a new user
+     
       if (!existingUser) {
         await prisma.user.create({
           data: {

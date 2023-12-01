@@ -121,7 +121,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "E:\\testing hehe\\nodejs\\generated\\client",
+      "value": "E:\\FYP BAckend\\nodejs\\generated\\client",
       "fromEnvVar": null
     },
     "config": {
@@ -138,8 +138,7 @@ const config = {
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": "../../.env",
-    "schemaEnvPath": "../../.env"
+    "rootEnvPath": null
   },
   "relativePath": "../../prisma",
   "clientVersion": "5.6.0",
@@ -148,6 +147,7 @@ const config = {
     "supabase"
   ],
   "activeProvider": "postgresql",
+  "postinstall": true,
   "inlineDatasources": {
     "supabase": {
       "url": {
@@ -156,8 +156,9 @@ const config = {
       }
     }
   },
-  "inlineSchema": "Ly8gcHJpc21hL3NjaGVtYS5wcmlzbWEKCmdlbmVyYXRvciBjbGllbnQgewogIHByb3ZpZGVyID0gInByaXNtYS1jbGllbnQtanMiCiAgb3V0cHV0ICAgPSAiLi4vZ2VuZXJhdGVkL2NsaWVudCIKfQoKLy8gRGVmaW5lIHlvdXIgU3VwYWJhc2UgZGF0YXNvdXJjZQpkYXRhc291cmNlIHN1cGFiYXNlIHsKICBwcm92aWRlciA9ICJwb3N0Z3Jlc3FsIgogIHVybCAgICAgID0gZW52KCJTVVBBQkFTRV9EQVRBQkFTRV9VUkwiKSAvLyBNYWtlIHN1cmUgdG8gcmVwbGFjZSB0aGlzIHdpdGggeW91ciBTdXBhYmFzZSBkYXRhYmFzZSBVUkwKfQoKLy8gRGVmaW5lIHlvdXIgZGF0YSBtb2RlbAptb2RlbCBVc2VyIHsKICBpZCAgICAgICBJbnQgICAgICBAaWQgQGRlZmF1bHQoYXV0b2luY3JlbWVudCgpKQogIHVzZXJuYW1lIFN0cmluZwogIGVtYWlsICAgIFN0cmluZwogIG1ldGFtYXNrIFN0cmluZwogIHNjb3JlICAgIEludAoKICBjcmVhdGVkQXQgRGF0ZVRpbWUgQGRlZmF1bHQobm93KCkpCiAgdXBkYXRlZEF0IERhdGVUaW1lIEB1cGRhdGVkQXQKfQo=",
-  "inlineSchemaHash": "052d8320919f6f0534eba0973b30a51c5dd0db69d1c98743f88ad1ce53046520"
+  "inlineSchema": "Ly8gcHJpc21hL3NjaGVtYS5wcmlzbWENCg0KZ2VuZXJhdG9yIGNsaWVudCB7DQogIHByb3ZpZGVyID0gInByaXNtYS1jbGllbnQtanMiDQogIG91dHB1dCAgID0gIi4uL2dlbmVyYXRlZC9jbGllbnQiDQp9DQoNCi8vIERlZmluZSB5b3VyIFN1cGFiYXNlIGRhdGFzb3VyY2UNCmRhdGFzb3VyY2Ugc3VwYWJhc2Ugew0KICBwcm92aWRlciA9ICJwb3N0Z3Jlc3FsIg0KICB1cmwgICAgICA9IGVudigiU1VQQUJBU0VfREFUQUJBU0VfVVJMIikgLy8gTWFrZSBzdXJlIHRvIHJlcGxhY2UgdGhpcyB3aXRoIHlvdXIgU3VwYWJhc2UgZGF0YWJhc2UgVVJMDQp9DQoNCi8vIERlZmluZSB5b3VyIGRhdGEgbW9kZWwNCm1vZGVsIFVzZXIgew0KICBpZCAgICAgICBJbnQgICAgICBAaWQgQGRlZmF1bHQoYXV0b2luY3JlbWVudCgpKQ0KICB1c2VybmFtZSBTdHJpbmcNCiAgZW1haWwgICAgU3RyaW5nDQogIG1ldGFtYXNrIFN0cmluZw0KICBzY29yZSAgICBJbnQNCg0KICBjcmVhdGVkQXQgRGF0ZVRpbWUgQGRlZmF1bHQobm93KCkpDQogIHVwZGF0ZWRBdCBEYXRlVGltZSBAdXBkYXRlZEF0DQp9DQo=",
+  "inlineSchemaHash": "85f6305f2c724d50c358b7a709dd00f8e4cc9ac67fd6195c46dac241029b5cdd",
+  "noEngine": false
 }
 config.dirname = '/'
 
