@@ -38,16 +38,16 @@ app.post("/webhook", async (req, res) => {
     if (eventType === "user.created") {
       // Look for existing user
       const existingUser = await prisma.user.findUnique({
-        where: { id: id },
+        where: { user_id: id },
       });
 
       if (!existingUser) {
         await prisma.user.create({
           data: {
-            id: id,
-            username: "default_username",
-            email: "default_email",
-            metamask: "default_metamask",
+            user_id: id,
+            username: 'default_username',
+            email: 'default_email',
+            metamask: 'default_metamask',
             score: 0,
             // Add other fields as needed
           },
