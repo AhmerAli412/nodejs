@@ -44,7 +44,7 @@ app.post("/webhook", async (req, res) => {
       if (!existingUser) {
         await prisma.user.create({
           data: {
-            user_id: id,
+            id: id,
             username: "default_username",
             email: "default_email",
             metamask: "default_metamask",
