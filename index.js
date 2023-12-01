@@ -21,6 +21,20 @@ app.post('/webhook', async (req, res) => {
 
     const eventType = evt.type;
 
+ 
+ 
+  // Get the Svix headers for verification
+  const svix_id = headers["svix-id"] 
+  const svix_timestamp = headers["svix-timestamp"] 
+  const svix_signature = headers["svix-signature"] 
+ 
+  // If there are missing Svix headers, error out
+  if (!svix_id || !svix_timestamp || !svix_signature) {
+      return new Response('Error occured -- no svix headers', {
+        status: 400
+      })
+  }
+
     if (eventType === "user.created") {
       // Look for existing user
       const existingUser = await prisma.user.findUnique({
