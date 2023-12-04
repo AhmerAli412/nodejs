@@ -109,14 +109,14 @@ app.post("/webhook", async (req, res) => {
 
       // Look for an existing user using user_id
       const existingUser = await prisma.user.findUnique({
-        where: { id: id },
+        where: { user_id: id },
       });
 
       if (!existingUser) {
         // User does not exist, create a new user
         await prisma.user.create({
           data: {
-            id: id,
+            user_id: id,
             username: username || "default_username",
             email: email || "default_email",
             metamask: metamask || "default_metamask",
