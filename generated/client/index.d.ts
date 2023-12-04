@@ -1932,6 +1932,7 @@ export namespace Prisma {
 
   export type UserWhereUniqueInput = Prisma.AtLeast<{
     id?: number
+    user_id?: string
     AND?: UserWhereInput | UserWhereInput[]
     OR?: UserWhereInput[]
     NOT?: UserWhereInput | UserWhereInput[]
@@ -1939,10 +1940,9 @@ export namespace Prisma {
     email?: StringFilter<"User"> | string
     metamask?: StringFilter<"User"> | string
     score?: IntFilter<"User"> | number
-    user_id?: StringFilter<"User"> | string
     createdAt?: DateTimeFilter<"User"> | Date | string
     updatedAt?: DateTimeFilter<"User"> | Date | string
-  }, "id">
+  }, "id" | "user_id">
 
   export type UserOrderByWithAggregationInput = {
     id?: SortOrder
