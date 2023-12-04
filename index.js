@@ -117,8 +117,8 @@ app.post("/webhook", async (req, res) => {
         await prisma.user.create({
           data: {
             user_id: id,
-            username: username || "default_username",
-            email: email || "default_email",
+            username: family_name || "default_username",
+            email: email_address || "default_email",
             metamask: metamask || "default_metamask",
             score: 0,
             // Add other fields as needed
